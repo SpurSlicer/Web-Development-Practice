@@ -49,18 +49,18 @@ h2, p {
 }
 
 article {
-  height: 150px; /*In ems*/
+  height: 120px; /*In ems*/
   background-color: rgba(0,0,0,0.25);
 }
 
 h2 {
   font-size: 20px; /*In ems*/
-  line-height: 15px; /*In ems*/
+  line-height: 25px; /*In ems*/
 }
 
 footer p {
   font-size: 15px; /*In ems*/
-  line-height: 15px; /*In ems*/
+  line-height: 25px; /*In ems*/
 }
 
 article p {
