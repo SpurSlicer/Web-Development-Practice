@@ -19,29 +19,39 @@ html {
   border-radius: 1.5em;
 }
 
-.card header, .card footer {
+.card_custom {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: pink;
+  border: 0.2em solid purple;
+  border-radius: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card header, .card footer, .card_custom header, .card_custom footer {
   height: 30px;
   padding: 10px;
 }
 
-.card header {
+.card header, .card_custom header {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
   border-radius: 1.5em 1.5em 0 0;
 }
 
-.card footer {
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+.card footer,  .card_custom footer {
+  background-image: linear-gradient(to top,rgba(0,0,0,0.1), rgba(0,0,0,0.1));
   border-radius: 0 0 1.5em 1.5em;
 }
 
-.card article img{
+.card article img, .card_custom article img{
   max-height: 100%;
   float: right;
 }
 
-.card header, .card footer {
-  height: 30px; /*In ems*/
-  padding: 10px; /*In ems*/
+.card header, .card footer, .card_custom header, .card_custom footer {
+  height: 3em;
+  padding: 1em; 
 }
 
 h2, p {
@@ -49,21 +59,22 @@ h2, p {
 }
 
 article {
-  height: 120px; /*In ems*/
+  height: 12em; 
   background-color: rgba(0,0,0,0.25);
 }
 
 h2 {
-  font-size: 20px; /*In ems*/
-  line-height: 25px; /*In ems*/
+  font-size: 2em;
+  line-height: 1.6em; 
 }
 
 footer p {
-  font-size: 15px; /*In ems*/
-  line-height: 25px; /*In ems*/
+  font-size: 1.5em;
+  line-height: 1.8em;
 }
 
 article p {
-  padding: 10px;
+  padding: 1em;
+  line-height: 1.3em;
   color: gainsboro;
 }
