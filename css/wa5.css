@@ -49,7 +49,7 @@ h2, p {
 }
 
 article {
-  height: 100px; /*In ems*/
+  height: 120px; /*In ems*/
   background-color: rgba(0,0,0,0.25);
 }
 
