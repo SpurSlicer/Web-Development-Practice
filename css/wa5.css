@@ -29,27 +29,52 @@ html {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.card header, .card footer, .card_custom header, .card_custom footer {
+.card header, .card footer {
   height: 30px;
   padding: 10px;
 }
 
-.card header, .card_custom header {
+.card_custom header, .card_custom footer {
+  height: 30px;
+  padding: 10px;
+}
+
+.card header {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
   border-radius: 1.5em 1.5em 0 0;
 }
 
-.card footer,  .card_custom footer {
+.card_custom header {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.card footer {
   background-image: linear-gradient(to top,rgba(0,0,0,0.1), rgba(0,0,0,0.1));
   border-radius: 0 0 1.5em 1.5em;
 }
 
-.card article img, .card_custom article img{
+.card_custom footer {
+  background-image: linear-gradient(to top,rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+.card article img {
   max-height: 100%;
   float: right;
 }
 
-.card header, .card footer, .card_custom header, .card_custom footer {
+.card_custom article img {
+  max-height: 100%;
+  float: right;
+}
+
+.card header, .card footer {
+  height: 3em;
+  padding: 1em; 
+}
+
+.card_custom header, .card_custom footer {
   height: 3em;
   padding: 1em; 
 }
