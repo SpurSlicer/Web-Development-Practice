@@ -1,0 +1,104 @@
+/* ------------------------- */
+/*     BACKGROUND & FONTS    */
+/* ------------------------- */
+html {
+    background-color: black;
+    background-image: linear-gradient(to bottom left, 
+        rgba(255, 0,  0, 0.3) 20%, 
+        rgba(255, 174, 0, 0.3) 40%, 
+        rgba(0, 255, 4, 0.3) 60%, 
+        rgba(13, 0, 255, 0.3) 80%, 
+        rgba(217, 0, 255, 0.3) 100%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ------------------------- */
+/*    HEADER & FOOTER INFO   */
+/* ------------------------- */
+.name {
+    text-align: center;
+    color: white;
+}
+.header {
+    padding: 1px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+/* ------------------------- */
+/*     BOX BODY STYLIZING    */
+/* ------------------------- */
+.description {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: solid;
+    background-color: white;
+}
+.events {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+@media screen and (max-width: 1200px) {
+    .events {
+        grid-template-columns: 2fr 2fr;
+    }
+}
+@media screen and (max-width: 500px) {
+    .events {
+        grid-template-columns: 2fr;
+    }
+}
+
+
+/* ------------------------- */
+/* EVENT CONTAINER STYLIZING */
+/* ------------------------- */
+.event {
+    list-style: none;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+}
+.event h3 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.event hr {
+    border-color: black;
+    border-image: linear-gradient(to left, 
+        rgba(255, 0,  0, 0.3) 20%, 
+        rgba(255, 174, 0, 0.3) 40%, 
+        rgba(0, 255, 4, 0.3) 60%, 
+        rgba(13, 0, 255, 0.3) 80%, 
+        rgba(217, 0, 255, 0.3) 100%)
+        1;
+    margin: 0;
+}
+.event .date {
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 7px;
+}
+.event h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.event .event-description p, .event ul {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
