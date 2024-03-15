@@ -149,7 +149,7 @@ html {
     margin-top: 0px;
     margin-bottom: 10px;
 }
-.event h4 + ul, .event h4 + ul ul {
+.event h4 + ul, .event h5 + ul {
     padding: 0;
     display: flex;
     flex:auto;
@@ -157,7 +157,11 @@ html {
     justify-content: center;
     gap: 5px;
 }
-.event h4 + ul li {
+.event h5 {
+    text-align: center;
+
+}
+.event h4 + ul li, .event h5 + ul li {
     list-style: none;
     border-style: solid;
     border-radius: 30px;
@@ -166,7 +170,7 @@ html {
     background-color:lightgray;
     transition: background-image 50ms linear;
 }
-.event h4 + ul li:hover {
+.event h4 + ul li:hover, .event h5 + ul li:hover {
     background-image: linear-gradient(to bottom right, 
     rgba(255, 0,  0, 0.3) 20%, 
     rgba(255, 174, 0, 0.3) 40%, 
