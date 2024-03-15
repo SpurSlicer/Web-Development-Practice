@@ -9,8 +9,9 @@ html {
         rgba(0, 255, 4, 0.3) 60%, 
         rgba(13, 0, 255, 0.3) 80%, 
         rgba(217, 0, 255, 0.3) 100%);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:sans-serif;
 }
+
 
 /* ------------------------- */
 /*    HEADER & FOOTER INFO   */
@@ -18,44 +19,75 @@ html {
 .name {
     text-align: center;
     color: white;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 5px 5px 10px black;
+    font-weight: bold;
 }
 .header {
-    padding: 1px;
-    width: 100%;
-    height: auto;
+    padding: 10px;
+    width: auto;
+    font-size: 25px;
     text-align: center;
     margin: 0;
     background-color: black;
     color: white;
+}
+.header h1 {
+    margin: 0;
 }
 
 /* ------------------------- */
 /*     BOX BODY STYLIZING    */
 /* ------------------------- */
 .description {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
     padding-left: 10px;
     padding-right: 10px;
     border-style: solid;
+    border-radius: 50px;
+    border-width: 10px;
     background-color: white;
+    text-align: center;
+    font-weight: bold;
 }
 .events {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
     display: grid;
+    justify-content: center;
     column-gap: 10px;
     row-gap: 10px;
     grid-template-columns: 2fr 2fr 2fr;
 }
 @media screen and (max-width: 1200px) {
+    .description {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
     .events {
+        margin-left: 5vw;
+        margin-right: 5vw;
         grid-template-columns: 2fr 2fr;
+    }
+    .event:nth-child(9) {
+        grid-column: span 2;
     }
 }
 @media screen and (max-width: 500px) {
+    .description {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
     .events {
+        margin-left: 3vw;
+        margin-right: 3vw;
         grid-template-columns: 2fr;
+    }
+    .event:nth-child(9) {
+        grid-column: span 1;
     }
 }
 
@@ -65,12 +97,27 @@ html {
 /* ------------------------- */
 .event {
     list-style: none;
-    background-color: white;
+    background-color: lightgrey;
     border-style: solid;
     border-color: black;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 0px;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 5px;
+    transition: background-color 200ms linear, border-image 100ms, border-radius 50ms linear;
+}
+.event:hover {
+    background-color: white;
+    border-image: linear-gradient(to bottom right, 
+        rgba(255, 0,  0, 0.7) 20%, 
+        rgba(255, 174, 0, 0.7) 40%, 
+        rgba(0, 255, 4, 0.7) 60%, 
+        rgba(13, 0, 255, 0.7) 80%, 
+        rgba(217, 0, 255, 0.7) 100%)
+    1;
+    border-radius: 0px;
 }
 .event h3 {
     text-align: center;
@@ -79,7 +126,7 @@ html {
 }
 .event hr {
     border-color: black;
-    border-image: linear-gradient(to left, 
+    border-image: linear-gradient(to right, 
         rgba(255, 0,  0, 0.3) 20%, 
         rgba(255, 174, 0, 0.3) 40%, 
         rgba(0, 255, 4, 0.3) 60%, 
@@ -94,11 +141,40 @@ html {
     margin-bottom: 15px;
     margin-right: 7px;
 }
-.event h4 {
+.event h4, .event h5 {
     margin-top: 1px;
     margin-bottom: 1px;
 }
 .event .event-description p, .event ul {
     margin-top: 0px;
     margin-bottom: 10px;
+}
+.event h4 + ul, .event h4 + ul ul {
+    padding: 0;
+    display: flex;
+    flex:auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+.event h4 + ul li {
+    list-style: none;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color:lightgray;
+    transition: background-image 50ms linear;
+}
+.event h4 + ul li:hover {
+    background-image: linear-gradient(to bottom right, 
+    rgba(255, 0,  0, 0.3) 20%, 
+    rgba(255, 174, 0, 0.3) 40%, 
+    rgba(0, 255, 4, 0.3) 60%, 
+    rgba(13, 0, 255, 0.3) 80%, 
+    rgba(217, 0, 255, 0.3) 100%);
+}
+.footer {
+    text-shadow: 0px 0px 10px white;
+    text-align: center;
 }
